@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To do list</title>
-    <link rel="stylesheet" href="https://eunsuneun.github.io/reset-nomalize-css/reset-nomalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://eunsuneun.github.io/reset-nomalize-css/reset-nomalize.css"
+    />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
       .hidden {
@@ -174,7 +177,15 @@
 
         // 상단 날짜
         const date = new Date();
-        const week = ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"];
+        const week = [
+          "일요일",
+          "월요일",
+          "화요일",
+          "수요일",
+          "목요일",
+          "금요일",
+          "토요일",
+        ];
         $year.textContent = date.getFullYear();
         $month.textContent = date.getMonth() - 1;
         $date.textContent = date.getDate();
@@ -250,7 +261,7 @@
         // });
 
         // active된 추가하기 버튼 클릭 시
-        $todoAdd.addEventListener("submit", event => {
+        $todoAdd.addEventListener("submit", (event) => {
           event.preventDefault();
           addTodo();
         });
@@ -262,14 +273,21 @@
       <div class="todolist">
         <h1 class="hidden">할 일 목록</h1>
         <div class="todo-top">
-          <h2 class="days"><span class="year"></span>년 <span class="month"></span>월 <span class="date"></span>일</h2>
+          <h2 class="days">
+            <span class="year"></span>년 <span class="month"></span>월
+            <span class="date"></span>일
+          </h2>
           <p class="day">요일</p>
-          <p class="todo-num"><span class="complete">0</span> / <span class="total">0</span> 완료</p>
+          <p class="todo-num">
+            <span class="complete">0</span> / <span class="total">0</span> 완료
+          </p>
         </div>
         <ul class="todo-lst"></ul>
         <form class="todo-add active">
           <input type="text" placeholder="할 일을 작성하세요." />
-          <button><span class="hidden">추가하기</span><i class="icon"></i></button>
+          <button>
+            <span class="hidden">추가하기</span><i class="icon"></i>
+          </button>
         </form>
       </div>
     </div>
