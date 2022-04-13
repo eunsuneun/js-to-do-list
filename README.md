@@ -2,6 +2,8 @@
 
 자바스크립트로 to-do-list-app 구현하기
 
+![스크린샷 2022-04-13 오후 3 46 35](https://user-images.githubusercontent.com/51769583/163118980-6a893aa5-149c-4954-be2f-263a189ed080.png)
+
 [완성된 투두리스트 페이지](https://eunsuneun.github.io/js-to-do-list/)
 
 <br>
